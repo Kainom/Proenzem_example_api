@@ -1,0 +1,76 @@
+:root {
+  --dracula-background: #282a36;
+  --dracula-current-line: #44475a;
+  --dracula-selection: #44475a;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+}
+
+#faced {
+  margin-bottom: 0.5rem;
+}
+
+.createText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.createText h3 {
+  margin-bottom: 0rem;
+}
+
+.inputsText {
+  margin-top: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--dracula-pink);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0rem 1rem;
+  padding-bottom: 1.4rem;
+}
+
+footer p:hover {
+  color: var(--dracula-green);
+}
+
+button {
+  background-color: var(--dracula-green);
+  color: var(--dracula-background);
+  border: 0;
+  /* padding: 0.5rem 5rem; */
+  width: 100%;
+  padding: 0.7rem 0rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1.2rem;
+  color: var(--dracula-background);
+}
+
+.inputsText input {
+  padding: 1rem 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.forms {
+  width: 27vw;
+}
+
+.btn {
+  padding: 0;
+}
+

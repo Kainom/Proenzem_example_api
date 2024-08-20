@@ -1,0 +1,300 @@
+:root {
+  --dracula-background: #282a36;
+  --dracula-current-line: #44475a;
+  --dracula-selection: #44475a;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  /* height: 55rem; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  display: grid;
+  justify-content: center;
+}
+body {
+  background-color: var(--dracula-background) !important;
+  color: var(--dracula-purple);
+}
+
+.forms {
+  /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem; */
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  /* background-color: var(--dracula-current-line) */
+  border-radius: 0.4rem;
+  width: 34vw;
+}
+
+#faced {
+  fill: var(--dracula-green);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.createText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border-bottom: 0.0175rem solid var(--dracula-pink); */
+  /* padding-bottom: 1rem; */
+  position: relative;
+  max-width: 100%;
+}
+
+.createText h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.createText::after {
+  content: " ";
+  width: 33.9vw;
+  height: 0.009rem;
+  margin-top: 1rem;
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(
+    to right,
+    var(--dracula-pink) 0%,
+    var(--dracula-green) 100%
+  );
+}
+
+.inputsText {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+  /* padding: 0 2rem; */
+}
+
+#email {
+  grid-column: 1/-1;
+}
+#password {
+  grid-column: 1/-1;
+}
+#name {
+  max-width: 90%;
+}
+#sobrenome {
+  max-width: 90%;
+  /* margin-left: 1.6rem; */
+  justify-self: end;
+}
+
+.dataStyle {
+  border-radius: 0.2rem;
+  background-color: var(--dracula-background);
+  color: var(--dracula-purple);
+  border: 0.0375rem solid var(--dracula-pink);
+}
+
+.inputsText input {
+  padding: 0.7rem 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.other-inputs {
+  display: flex;
+  margin-top: 2rem;
+  /* background-color: red;  */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.birthday select {
+  width: 30%;
+  padding: 0.5rem;
+}
+
+.birthday::before {
+  content: "Birthday \0";
+  color: var(--dracula-pink);
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+
+  position: absolute;
+  top: -1.4rem;
+}
+.gender::before {
+  content: "Gender \0";
+  color: var(--dracula-pink);
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+
+  position: absolute;
+  top: -1.4rem;
+}
+
+footer p {
+  font-size: 11px;
+  margin-top: 1rem;
+  /* padding: 10px; */
+}
+
+footer span {
+  color: var(--dracula-pink);
+  cursor: pointer;
+}
+
+footer span:hover {
+  color: var(--dracula-green);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  background-color: var(--dracula-green);
+  color: var(--dracula-background);
+  border: 0;
+  padding: 0.5rem 5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--dracula-pink);
+  color: var(--dracula-background);
+}
+
+.messageQuest {
+  display: flex;
+  justify-content: center;
+}
+.messageQuest a {
+  color: var(--dracula-pink);
+}
+
+.messageQuest a:hover {
+  color: var(--dracula-green);
+}
+
+.check-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: var(--dracula-red); */
+  width: 30%;
+  padding: 0.5rem;
+}
+
+.check-style input {
+  clip-path: circle(46% at 50% 50%); /* Set the clip path of circle*/
+}
+
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  height: 30vh;
+  padding: 10rem;
+  box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.language {
+  display: flex;
+  /* background-color: #50fa7b; */
+  color: #282a36;
+}
+
+.language p {
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--dracula-pink);
+  cursor: pointer;
+  position: relative;
+
+}
+
+.language  span {
+  background-color: var(--dracula-green);
+  width: 2rem;
+  align-self: center;
+  text-align: center;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-left: 0.2rem;
+  height: 60%;
+}
+
+
+#btnLang {
+  background-color: #282a36;
+  color: var(--dracula-pink);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 0.2rem;
+}
+
+.more{
+    position: relative;
+}
+
+.more::before {
+    content: " ";
+    display: block;
+    width: 98%;
+    height: 0.005rem;
+    margin: 0.3rem 0;
+    position: relative;
+    left: 5px;
+    bottom: 0px;
+    background: gray;
+    
+  }
+
+.more a {
+  padding: 0.3rem;
+  color: var(--dracula-pink);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.more a:hover {
+  color: var(--dracula-green);
+}
